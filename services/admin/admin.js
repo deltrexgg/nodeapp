@@ -5,6 +5,11 @@ const app = express();
 const PORT = 3001;
 
 app.use(express.json());
+
+app.get('/' ,(req, res) => {
+    res.send("Hi from nodejs")
+} )
+
 app.use('/api/admin', adminRoutes);
 
 app.listen(PORT, () => {
