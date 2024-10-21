@@ -2,7 +2,7 @@ const express = require('express');
 const adminRoutes = require('./adminRoutes');
 
 const app = express();
-const PORT = 3001;
+const PORT = 80;
 
 app.use(express.json());
 
